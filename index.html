@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Única - Sobre Mim, Projetos e Novidades</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8fafd;
+            color: #222;
+        }
+        header {
+            background: #042940;
+            color: #fff;
+            padding: 2em 0 1em 0;
+            text-align: center;
+        }
+        nav {
+            background: #005C53;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 2em;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #a7c957;
+        }
+        main {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 1em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(48,48,48,0.08);
+        }
+        section {
+            margin: 2em 0;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            gap: 2em;
+            align-items: flex-start;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        section img {
+            max-width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(50,50,50,0.07);
+        }
+        .section-content {
+            flex: 1;
+        }
+
+        @media (max-width: 800px){
+            main, section {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            section img {
+                margin-bottom: 1em;
+                max-width: 100%;
+            }
+            section {
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Minha Página</h1>
+        <p>Conheça um pouco mais sobre mim, meus projetos e as novidades do momento!</p>
+    </header>
+    <nav>
+        <a href="#sobremim">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#novidades">Novidades</a>
+    </nav>
+    <main>
+        <section id="sobremim">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Sobre Mim">
+            <div class="section-content">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Olá! Meu nome é João e sou apaixonado por tecnologia, programação e inovação. 
+                    Desde jovem, sempre gostei de explorar ferramentas digitais, criar aplicações e entender como as coisas funcionam por trás das telas.
+                    Adoro compartilhar conhecimento e sempre estou em busca de novos desafios para crescer profissionalmente e pessoalmente.
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Projetos">
+            <div class="section-content">
+                <h2>Projetos</h2>
+                <p>
+                    Ao longo dos últimos anos, desenvolvi diversos projetos que combinam criatividade e tecnologia. 
+                    Entre eles estão aplicativos mobile, sites responsivos, automação de tarefas e até jogos simples.
+                    Um dos meus projetos mais recentes foi um site de portfólio interativo que apresenta meus trabalhos de forma moderna e intuitiva.
+                </p>
+            </div>
+        </section>
+
+        <section id="novidades">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Novidades">
+            <div class="section-content">
+                <h2>Novidades</h2>
+                <p>
+                    Estou sempre buscando me atualizar com as últimas tendências do universo tech. 
+                    Recentemente comecei a estudar Inteligência Artificial e Machine Learning, 
+                    e já colhi ótimos resultados aplicando essas tecnologias em projetos experimentais. 
+                    Fique atento, pois em breve trarei novidades sobre algum lançamento!
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
